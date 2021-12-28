@@ -1,19 +1,26 @@
 {
-  "name": "CYF-Coursework-Template",
+  "name": "javascript-core-1-coursework-week4",
   "version": "1.0.0",
+  "description": "Exercises for JS1 Week 4",
   "license": "CC-BY-SA-4.0",
-  "description": "You must update this package",
   "scripts": {
-    "test": "jest"
+    "test": "jest --testRegex='mandatory[/\\\\].*\\.js$'",
+    "extra-tests": "jest --testRegex='extra[/\\\\].*\\.js$'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeYourFuture/CYF-Coursework-Template.git"
+    "url": "git+https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week4.git"
   },
   "bugs": {
-    "url": "https://github.com/CodeYourFuture/CYF-Coursework-Template/issues"
+    "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week4/issues"
   },
-  "homepage": "https://github.com/CodeYourFuture/CYF-Coursework-Template#readme",
+  "jest": {
+    "reporters": [
+      "default",
+      "<rootDir>/util/github-action-reporter.js"
+    ]
+  },
+  "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week4#readme",
   "devDependencies": {
     "jest": "^26.6.3"
   }
